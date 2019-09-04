@@ -15,50 +15,6 @@
 
 /*     brand Colors              */
 
-/*Where Abigail started tempering */
-input.form-group {
-  padding: 5px;
-  box-sizing: border-box; border-radius: 3px; border: 2px solid rgb(225, 225, 230); width: 100%;
-}
-
-@font-face {
-  font-family: ‘BR Firma CW’;
-  /*src: url(../font/br-firma-sb.woff2) format(‘woff2’);*/
-   src: url(‘https://pagefinancials.com/email/assets/fonts/br-firma/br-firma-sb.woff2’) format(‘woff2’);
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: ‘Sailec’;
-  /*src: url(../font/sailec-reg.woff2) format(‘woff2’);*/
-   src: url(‘https://pagefinancials.com/email/assets/fonts/sailec/sailec-reg.woff2’) format(‘woff2’); 
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face{
-  font-family:“Frank”;
-  src:url(../font/Frank-Regular.eot) format(“embedded-opentype”),url(../font/Frank-Light.woff) format(“woff”),url(../font/Frank-Regular.ttf) format(“truetype”);
-  font-style:normal;
-  /* font-weight:500 */
-}
-/*@font-face{
-  font-family:“Circulartt”;
-  src:url(assets/font/Circular-Book.eot) format(“embedded-opentype”),url(assets/font/Circular-Book.woff) format(“woff”),url(assets/font/Circular-Book.ttf) format(“truetype”),url(assets/font/Circular-Book.svg) format(“svg”);
-  font-style:normal;
-  /* font-weight:500 */
-/*}*/
-@font-face {
-  font-family: 'Circular';
-  src: url('../font/Circular-Book.eot') format('embedded-opentype'),
-       url('../font/Circular-Book.woff') format('woff'),
-       url('../font/Circular-Book.ttf') format('truetype'),
-       url('../font/Circular-Book.svg') format('svg');
-  }
-  * {
-    font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW';
-  }
 .carousel.carousel-full-nagivation .left {
   cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
 }
@@ -78,7 +34,7 @@ input.form-group {
 }
 
 html {
-  font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW' !important;
+  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -106,7 +62,7 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW';
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -482,7 +438,7 @@ template {
 }
 
 html {
-  font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW';
+  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -510,7 +466,7 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW';
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5696,7 +5652,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW';
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10970,7 +10926,7 @@ legend {
 }
 
 .serif-font {
-  font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW';
+  font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
 * {
@@ -14725,7 +14681,7 @@ h6,
 .h2,
 .h3,
 .h4 {
-  font-family: 'Sailec' , 'Frank' , 'Circular' , 'BR Firma CW';
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -14816,7 +14772,7 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: 'Sailec' , "Arial" ,'Frank' , 'Circular' , 'BR Firma CW';
+  font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
 .title,
@@ -18109,3 +18065,38 @@ footer .pull-center {
 }
 
 /*# sourceMappingURL=kit-free.css.map */
+
+/*Where Abigail started tempering */
+input.form-group {
+  padding: 5px;
+  box-sizing: border-box; border-radius: 3px; border: 2px solid rgb(225, 225, 230); width: 100%;
+}
+
+@font-face {
+  font-family: ‘BR Firma CW’;
+  src: url(assets/font/br-firma-sb.woff2) format(‘woff2’);
+  /* src: url(’https://pagefinancials.com/email/assets/fonts/br-firma/br-firma-sb.woff2') format(‘woff2’); */
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: ‘Sailec’;
+  src: url(assets/font/sailec-reg.woff2) format(‘woff2’);
+  /* src: url(‘https://pagefinancials.com/email/assets/fonts/sailec/sailec-reg.woff2’) format(‘woff2’); */
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face{
+  font-family:“Frank”;
+  src:url(assets/font/Frank-Regular.eot) format(“embedded-opentype”),url(font/Frank-Light.woff) format(“woff”),url(font/Frank-Regular.ttf) format(“truetype”);
+  font-style:normal;
+  /* font-weight:500 */
+}
+@font-face{
+  font-family:“Circular”;
+  src:url(assets/font/Circular-Book.eot) format(“embedded-opentype”),url(font/Circular-Book.woff) format(“woff”),url(font/Circular-Book.ttf) format(“truetype”),url(font/Circular-Book.svg) format(“svg”);
+  font-style:normal;
+  /* font-weight:500 */
+}
