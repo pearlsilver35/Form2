@@ -12,7 +12,9 @@
     Form
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="./assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
   
@@ -38,14 +40,53 @@
         </div>
       </nav>
       <!--        end info navbar -->
-    <div class="section section-basic" style="margin: -15px;">
+    <div class="section section-basic">
       
       <div class="container">
-         
+          <div id="navigation-pills">
+              
+              <div class="row">
+                <div class="col-lg-6 col-md-8">
+                  <ul class="nav nav-pills nav-pills-icons" role="tablist">
+                    <!--
+                                    color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+                                -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#form-1" role="tab" data-toggle="tab">
+                        <i class="material-icons">dashboard</i> Dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#form-2" role="tab" data-toggle="tab">
+                        <i class="material-icons">schedule</i> Schedule
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
+                        <i class="material-icons">list</i> Tasks
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content tab-space">
+                    <div class="tab-pane active" id="form-1">
+                      Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
+                      <br>
+                      <br> Dramatically visualize customer directed convergence without revolutionary ROI.
+                    </div>
+                    <div class="tab-pane" id="schedule-1">
+                      Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
+                      <br>
+                      <br>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                    </div>
+                    <div class="tab-pane" id="tasks-1">
+                      Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
+                      <br>
+                      <br>Dynamically innovate resource-leveling customer service for state of the art customer service.
+                    </div>
+                  </div>
+                </div>
 
           <div class="card-deck">
-
-              
               
               <div class="card" style="flex-grow: 3;">
                 <div class="card-body">
@@ -57,7 +98,7 @@
               <div class="row">
                 <div class="col-lg-12 col-sm-12">
                   <div class="form-group has-default">
-                    <input type="text" class="form-group" placeholder="Corporate Category......" size="70%" >
+                    <input type="text" class="form-control" placeholder="Input your Corporate Category......">
                   </div>
                 </div>
             </div>
@@ -67,90 +108,78 @@
             <div class="row">
               <div class="col-lg-4 col-sm-6">
                 <div class="form-group has-default">
-                    <label for="CompanyName">Account Name</label>
-                  <input id="CompanyName" type="text" class="form-group" placeholder="Account Name">
+                  <input type="text" class="form-control" placeholder="Account Name">
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6">
                   <div class="form-group has-default">
-                      <label for="OfficeAddress">Office Address</label>
-                    <input id="OfficeAddress" type="text" class="form-group" placeholder="Office Address"> 
+                    <input type="text" class="form-control" placeholder="Office Address">
                   </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="form-group has-default">
-                        <label for="CountryOfResidence">Country of residence</label>
-                      <input id="CountryOfResidence" type="text" class="form-group" placeholder="Country">
+                      <input type="text" class="form-control" placeholder="Country of residence">
                     </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6">
-                      <div class="form-group has-default">
-                          <label for="BusinessRegNo">Inc. No./Business Registration No</label>
-                        <input id="BusinessRegNo" type="text" class="form-group" placeholder="Business Registration No" size="40%" >
-                      </div>
-                    </div>
                   <div class="col-lg-4 col-sm-6">
                       <div class="form-group has-default">
-                          <label for="State">State of Residence</label>
-                        <input id="State" type="text" class="form-group" placeholder="State">
+                        <input type="text" class="form-control" placeholder="State">
                       </div>
                     </div>
-                    
                     <div class="col-lg-4 col-sm-6">
                         <div class="form-group has-default">
-                            <label for="city">City  of Residence</label>
-                          <input id="city" type="text" class="form-group" placeholder="City">
+                          <input type="text" class="form-control" placeholder="City">
                         </div>
                       </div>
                       <div class="col-lg-4 col-sm-6">
                           <div class="form-group has-default">
-                              <label for="L.G.A">L.G.A  of Residence</label>
-                            <input id="L.G.A" type="text" class="form-group" placeholder="L.G.A">
+                            <input type="text" class="form-control" placeholder="L.G.A">
                           </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group has-default">
-                                <label for="phone">Office Phone</label>
-                              <input id="phone" type="number" class="form-group" placeholder="Office Phone">
+                              <input type="number" class="form-control" placeholder="Office Phone">
                             </div>
                           </div>
                           <div class="col-lg-4 col-sm-6">
                               <div class="form-group has-default">
-                                  <label for="CompanyEmail">Company Email</label>
-                                <input id="CompanyEmail" type="text" class="form-group" placeholder="Company Email">
+                                <input type="text" class="form-control" placeholder="Company Email">
                               </div>
                             </div> 
                             <div class="col-lg-4 col-sm-6">
                                 <div class="form-group has-default">
-                                    <label for="Website">Website (if any)</label>
-                                  <input id="Website" type="text" class="form-group" placeholder="Website">
+                                  <input type="text" class="form-control" placeholder="Website (if any)">
                                 </div>
                               </div>
                               <div class="col-lg-4 col-sm-6">
                                   <div class="form-group has-default">
-                                      <label for="IndustrySector">Industry Sector</label>
-                                    <input id="IndustrySector" type="text" class="form-group" placeholder="Industry Sector">
+                                    <input type="text" class="form-control" placeholder="Country of residence">
                                   </div>
                                 </div>
-                             
-                                  <div class="col-lg-4 col-sm-6">
-                                      <div class="form-group has-default">
-                                          <label for="NumberOfEmployees">Number of Employees</label>
-                                        <input id="NumberOfEmployees" type="text" class="form-group" placeholder="No. of Employees">
-                                      </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="form-group has-default">
+                                      <input type="text" class="form-control" placeholder="State">
                                     </div>
-                                   
+                                  </div>
+                                  
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="form-group has-default">
+                                          <input type="text" class="form-control" placeholder="Inc. No./Business Registration No">
+                                        </div>
+                                      </div>
                                       <div class="col-lg-4 col-sm-6">
                                           <div class="form-group has-default">
-                                              <label for="LineOfBusiness">Type / Nature of Business</label>
-                                            <input id="LineOfBusiness" type="text" class="form-group" placeholder="Type / Nature of Business">
+                                            <input type="text" class="form-control" placeholder="Type / Nature of Business">
                                           </div>
                                         </div>
-                                         
+                                        <div class="col-lg-4 col-sm-6">
+                                            <div class="form-group has-default">
+                                              <input type="text" class="form-control" placeholder="No. of Employees">
+                                            </div>
+                                          </div> 
                                           <div class="col-lg-4 col-sm-6">
                                               <div class="form-group has-default">
-                                                  <label for="TaxID">Tax Identification Number</label>
-                                                <input id="TaxID" type="text" class="form-group" placeholder="TaxID">
+                                                <input type="text" class="form-control" placeholder="Tax Identification Number">
                                               </div>
                                             </div>
                                                                    
@@ -172,7 +201,7 @@
           <div class="row">
               <div class="col-md-12">
                 <button class="btn">Cancle</button>
-                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-info">Submit</button>
               </div>
             </div>
                 <div class="card-footer">
@@ -183,45 +212,16 @@
 
               
             </div>
-            <div class="card" style="background-color: #f4f5f8; flex-grow: 1; box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.1);">
-                <div class="card card-body" style="margin-top: -5px;" >
-                    <div class="pc-side is-open">
-                        <h4>Enjoyed the read?</h4>
-                        <p class="pc-xsmall pc-news-text">Join our monthly newsletter for helpful tips on SEO, Web design, and more!</p>
-                        <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/47Hu/hOj" width="100%" id="iFrameResizer0" style="overflow: hidden; height: 150px;"></iframe>
-                        
-                    </div>
+            <div class="card" style="flex-grow: 1;">
+                <div class="card-body"  >
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text"> Dapibus convallis id curae; volutpat nullam pharetra dignissim nulla rutrum tristique. Lorem habitasse arcu vel suscipit sed, platea suscipit fermentum varius. Eros malesuada feugiat eros mauris potenti. Felis adipiscing nec mauris justo fermentum aptent. Ac posuere suscipit lacinia ornare interdum mus amet eget, accumsan cursus semper sapien. Litora augue primis id adipiscing mus magnis sodales adipiscing. Magna class tristique venenatis.
+                      Ac gravida porta habitasse ultricies quisque ut felis congue, condimentum habitant amet. Id molestie at ridiculus laoreet ridiculus 
+                    </p>
                 </div>
-                
-                <div class="card card-body"  >
-                   
-                    
-                            <ul>
-                              
-                              <li><strong>LICENSES</strong></li>
-                              <li class="checked"><a>✓&nbsp; Desktop</a></li>
-                              
-                                          <li><a href="#">Webfont</a></li>
-                                        
-                                          <li><a href="#">Ebook</a></li>
-                                        
-                                          <li><a href="#">Application</a></li>
-                                        
-                                          <li><a href="#">OFL/Apache</a></li>
-                                        
-                            </ul>
-                    
-                            
-                  </div>
-
-                  <div class="card card-body"  >
-                      <div class="pc-side is-open">
-                          <h4>Enjoyed the read?</h4>
-                          <p class="pc-xsmall pc-news-text">Join our monthly newsletter for helpful tips on SEO, Web design, and more!</p>
-                          
-                      </div>
-                    </div>
-                  
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
               </div>
               
           </div>

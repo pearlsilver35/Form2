@@ -1,0 +1,115 @@
+
+    <div class="alert alert-success" role="alert" *ngIf="RegNo">
+        <div class="alert-items">
+            <div class="alert-item static">
+                <div class="alert-icon-wrapper">
+                    <clr-icon class="alert-icon" shape="check-circle"></clr-icon>
+                </div>
+                <span class="alert-text">
+                   Current BusinessRegistration : {{ RegNo}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <select  *ngIf="!RegNo"  (change)="selectOption($event.target.value)"
+    >  <option [value]="null" >Choose Company</option>
+              <option [value]="item?.BusinessRegNo" *ngFor="let item of tracker">{{item?.BusinessRegNo}} - {{item?.CompanyName}}</option>
+          
+            </select>
+                <div class="alert alert-success" role="alert" *ngIf="_success">
+                                <div class="alert-items">
+                                    <div class="alert-item static">
+                                        <div class="alert-icon-wrapper">
+                                            <clr-icon class="alert-icon" shape="check-circle"></clr-icon>
+                                        </div>
+                                        <span class="alert-text">{{ _success}}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert-items" *ngIf="_error">
+                                        <div class="alert-item static">
+                                            <div class="alert-icon-wrapper">
+                                                <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+                                            </div>
+                                            <span class="alert-text">
+                                               {{_error}}
+                                            </span>
+                                        </div>
+                                    </div>
+                               
+       <div class="wrap">
+                      
+            
+        <fieldset>
+             
+
+                <div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+                        <div class="alert-items">
+                            <div class="alert-item static">
+                                <div class="alert-icon-wrapper">
+                                    <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+                                </div>
+                                <span class="alert-text">
+                                   {{errorMessage}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                <legend><h4>Account Information</h4></legend>
+                <div class="cards">
+                        <div  *ngIf="_loadingName">
+                                <span class="spinner spinner-sm">
+                                        Loading...
+                                    </span>
+
+                        </div>
+                       
+                <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                                <div class="clr-row">
+                                        <div class="clr-col-6">
+                                                <label for="fname">  Bank Name </label>
+                                                <select placeholder ="Select bank"  formControlName="bankCode" >
+                                                    <option [value]="null"  [selected]="keyboardStr == 'SELECTED'" selected>Select Bank</option>
+                                                      <option *ngFor="let item of _bank"[value]="[item.bank,item.sortcode]">{{item.bank}}</option>
+                                                     
+                                                    </select>
+                                            </div>
+                                                <div class="clr-col-6">
+                                                    <label for="lname">Account No</label>
+                                                    <input type="text" (input)="validate($event.target.value)" formControlName="accountNo" placeholder="Account Number" name="fname">
+                                                </div>
+                                                
+                                            </div>
+                                            <button class="btn btn-primary btn-block" [clrLoading]="_isloading" [disabled]="_check">Add Account</button>
+                </form>
+                </div>
+                   
+        </fieldset>
+        <fieldset>
+        <legend><h4>Annual Turnover</h4></legend>
+
+        <form [formGroup]="createLoan" (ngSubmit)="onAddTurnover()">
+  
+            <input type="number"   formControlName="TurnOver"   name="lastname" placeholder="TurnOver">
+           <input type="number"   formControlName="Avg_Balance_2M"   name="lastname" placeholder="Avg_Balance_2M">
+           <input type="number"   formControlName="Deposit_12M"   name="lastname" placeholder="Deposit_12M">
+            <input type="number"   formControlName="Deposit_24M"   name="lastname" placeholder="Deposit_24M">
+               
+      <button class="btn btn-primary btn-block" [clrLoading]="_isloading" [disabled]="!createLoan.valid">Submit</button>
+              </form>
+   
+        </fieldset> 
+       </div>
+        <clr-modal [(clrModalOpen)]="basic">
+            <h3 class="modal-title">Final Submittion</h3>
+            <div class="modal-body">
+                <p>Are you sure you want to continue </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" (click)="basic = false">No</button>
+                <button type="button" class="btn btn-primary" (click)="finalSubmition()">Yes</button>
+            </div>
+        </clr-modal>
+        

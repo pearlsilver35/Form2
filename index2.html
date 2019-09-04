@@ -50,13 +50,13 @@
                             <!--                 inputs -->
                             <div id="inputs">
                                 <div class="title">
-                                    <h3>Corporate Category</h3>
+                                    <h3>Choose Company</h3>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12">
                                         <div class="form-group">
                                             <select class="col s12 m12 customselect">
-                                                <option value="" disabled selected>Select your option</option>
+                                                <option value="" disabled selected>Select your Company</option>
                                                 <option value="1">Option 1</option>
                                                 <option value="2">Option 2</option>
                                                 <option value="3">Option 3</option>
@@ -65,117 +65,71 @@
                                     </div>
                                 </div>
                                 <div class="title">
-                                    <h3>Category Details</h3>
+                                    <h3>Account Information</h3>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4 col-sm-6">
+
+                                    <div class="col-lg-6 col-sm-6">
                                         <div class="form-group has-default">
-                                            <label for="CompanyName">Account Name</label>
-                                            <input id="CompanyName" type="text" class="form-group" placeholder="Account Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="OfficeAddress">Office Address</label>
-                                            <input id="OfficeAddress" type="text" class="form-group" placeholder="Office Address">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="CountryOfResidence">Country of residence</label>
-                                            <input id="CountryOfResidence" type="text" class="form-group" placeholder="Country">
+                                            <label for="bankCode">Bank Name</label>
+                                            <select id="bankCode" class="col s12 m12 customselect">
+                                                <option value="" disabled selected>Select your Bank</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="form-group has-default">
-                                            <label for="BusinessRegNo">Inc. No./Business Registration No</label>
-                                            <input id="BusinessRegNo" type="text" class="form-group" placeholder="Business Registration No" size="40%">
+                                            <label for="accountNo">Account Number</label>
+                                            <input id="accountNo" type="number" class="form-group" placeholder="Account No">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="State">State of Residence</label>
-                                            <input id="State" type="text" class="form-group" placeholder="State">
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12 col-sm-12">
+                                    <button class="btn btn-white col s12 m12">Add Account</button>
+                                </div>
 
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="city">City of Residence</label>
-                                            <input id="city" type="text" class="form-group" placeholder="City">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="L.G.A">L.G.A of Residence</label>
-                                            <input id="L.G.A" type="text" class="form-group" placeholder="L.G.A">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="phone">Office Phone</label>
-                                            <input id="phone" type="number" class="form-group" placeholder="Office Phone">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="CompanyEmail">Company Email</label>
-                                            <input id="CompanyEmail" type="text" class="form-group" placeholder="Company Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="Website">Website (if any)</label>
-                                            <input id="Website" type="text" class="form-group" placeholder="Website">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="IndustrySector">Industry Sector</label>
-                                            <input id="IndustrySector" type="text" class="form-group" placeholder="Industry Sector">
-                                        </div>
-                                    </div>
+                                <div class="title">
+                                    <h3>Annual Turnover</h3>
+                                </div>
 
-                                    <div class="col-lg-4 col-sm-6">
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-sm-6">
                                         <div class="form-group has-default">
-                                            <label for="NumberOfEmployees">Number of Employees</label>
-                                            <input id="NumberOfEmployees" type="text" class="form-group" placeholder="No. of Employees">
+                                            <label for="TurnOver">Turn Over</label>
+                                            <input id="TurnOver" type="number" class="form-group" placeholder="Turn Over">
                                         </div>
                                     </div>
-
-                                    <div class="col-lg-4 col-sm-6">
+                                    <div class="col-lg-6 col-sm-6">
                                         <div class="form-group has-default">
-                                            <label for="LineOfBusiness">Type / Nature of Business</label>
-                                            <input id="LineOfBusiness" type="text" class="form-group" placeholder="Type / Nature of Business">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="form-group has-default">
-                                            <label for="TaxID">Tax Identification Number</label>
-                                            <input id="TaxID" type="text" class="form-group" placeholder="TaxID">
+                                            <label for="Avg_Balance_2M">Average Balance 2M</label>
+                                            <input id="Avg_Balance_2M" type="number" class="form-group" placeholder="Average Balance 2M">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="label-control">Date Business Commenced</label>
-                                            <input type="date" class="form-control datetimepicker">
+                                        <div class="form-group has-default">
+                                            <label for="Deposit_12M">Deposit 12M</label>
+                                            <input id="Deposit_12M" type="number" class="form-group" placeholder="Deposit 12M">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="label-control">Date Incorporated</label>
-                                            <input type="date" class="form-control datetimepicker">
+                                        <div class="form-group has-default">
+                                            <label for="Deposit_24M">Deposit 24M</label>
+                                            <input id="Deposit_24M" type="number" class="form-group" placeholder="Deposit 24M">
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                             <!--                 end inputs -->
-                            <div class="row">
+                            <div class="row" style="float: right;">
                                 <div class="col-md-12">
                                     <button class="btn">Cancle</button>
-                                    <button class="btn btn-success">Submit</button>
+                                    <button class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -197,6 +151,7 @@
                                     <ul><a href="index2.html">Finance</a></ul>
 
                                     <ul><a href="index3.html">Add Directors</a></ul>
+
 
                                 </ul>
 

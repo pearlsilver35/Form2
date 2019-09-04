@@ -16,9 +16,25 @@
 /*     brand Colors              */
 
 /*Where Abigail started tempering */
+
+#radioBtn1 .notActive{
+  color: #000000;
+  background-color: #fff;
+  
+   
+  border: 0.7px solid rgb(225, 225, 230); 
+  width: 100%;
+
+}
+
 input.form-group {
   padding: 5px;
-  box-sizing: border-box; border-radius: 3px; border: 2px solid rgb(225, 225, 230); width: 100%;
+  box-sizing: border-box; border-radius: 3px; border: 1px solid rgb(225, 225, 230); width: 100%;
+}
+
+.customselect {
+  padding: 5px;
+  box-sizing: border-box; border-radius: 3px; border: 1px solid rgb(225, 225, 230); width: 100%;
 }
 
 @font-face {

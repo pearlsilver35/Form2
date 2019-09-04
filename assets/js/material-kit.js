@@ -13,7 +13,17 @@
  // * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 
-<!DOCTYPE html>
+//Where Abigail started tempering
+
+ $('#radioBtn1 a').on('click', function(){
+  var sel = $(this).data('title');
+  var tog = $(this).data('toggle');
+  $('#'+tog).prop('value', sel);
+  
+  $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+  $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+})
+
 var big_image;
 
 $(document).ready(function() {
