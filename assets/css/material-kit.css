@@ -17,6 +17,13 @@
 
 /*Where Abigail started tempering */
 
+.susty {
+  /* display: block; */
+  font-size: 30px !important;
+  padding: 15px 10px !important ;
+}
+
+
 #radioBtn1 .notActive{
   color: #000000;
   background-color: #fff;
@@ -14616,9 +14623,9 @@ textarea {
 }
 
 .nav-pills .nav-item i {
-  display: block;
+  /*display: block;*/
   font-size: 30px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .nav-pills.nav-pills-info .nav-item .nav-link.active,
