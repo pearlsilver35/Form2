@@ -3,6 +3,55 @@
 /*Where Abigail started tempering */
 
 
+.custcenter{
+  text-align: center !important;
+  margin: 2px !important;
+}
+.multiplecards {
+  background-color: #f4f5f8 !important; 
+  flex-grow: 1 !important; 
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.multiplecards .firstcard_multiplecard{
+  margin-top: -5px !important;
+}
+/*Customizable Table Stlying*/
+.customtable td{
+  padding-left: 5px;
+}
+
+.customtable th{
+  padding-left: 4px;
+}
+
+
+.customtable {
+border: 1px solid rgba(0,0,0,.125);
+padding: 8px !important; width: 100% !important;
+}
+
+.customtable tbody {
+  color: gray;
+  }
+
+
+.btn-linkcustom {
+  font-weight: 400;
+  color: #0000008c;
+  background-color: transparent;
+}
+
+.btn-linkcustom:hover {
+  color: #f36e14;
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: transparent;
+  
+}
+
+/*End Customizable Table Stlying*/
+
 #radioBtn1 .notActive{
   color: #000000;
   background-color: #fff;
